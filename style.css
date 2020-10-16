@@ -17,14 +17,18 @@
 }
 
 .jumbotron h1 {
+    margin-top: 15rem !important;
     font-size: 4em;
     font-weight: 200;
 }
 
-
 .jumbotron h2 {
     font-size: 1.5em;
     font-weight: 200;
+}
+
+.container-fluid .card {
+    margin-top: 15rem !important;
 }
 
 div #perfil-text {
@@ -35,16 +39,23 @@ div #perfil-text {
     width: 15rem;
 }
 
+#contacto, #redes {
+    color: white;
+}
+
 video {
-    display: block;
-    position: absolute;
+    display: inline-block;
+    position: fixed;
     object-fit: cover;
-    overflow: visible;
-    right: 0;
+    overflow: hidden;
     top: 0;
+    right: 0;
     width: 100%;
-    height: 50em;
+    height: 100%;
     z-index: -1;
+}
+#skills h2{
+    color: white;
 }
 
 h5 {
@@ -63,15 +74,29 @@ h5 {
 
 hr{
     width: 50vw;
+    background-color: white;
+    margin-bottom: 20rem;
 }
 
 .card hr {
     background-color: white;
     width: 20vw;
 }
+
+.card a {
+    color: rgb(222, 236, 17);
+}
+
+.card a:hover {
+    color: hotpink;
+
+}
+
 .card {
     color:white;
-    transition: transform 300ms ease, box-shadow 300ms ease;
+    background-color: rgb(41, 41, 41) !important;
+    transition: all 300ms ease;
+    border-radius: 40px !important;
 }
 
 .card:hover {
@@ -80,13 +105,18 @@ hr{
 }
 
 .card-deck .card:hover {
+    color: black;
+    background-color: rgb(255, 255, 255) !important;
     transform: scale(1.02, 1.02);
-    box-shadow: gray 0px 7px 10px;
+    box-shadow: gray 0px 7px 10px !;
 }
 
-.card-deck {
-
-    margin: 0 20%;
+.card-deck .card:hover a {
+    color: hotpink;
+}
+.card-deck .card {
+    background-color: rgb(41, 41, 41) !important;
+    border-radius: 20px !important;
 }
 
 .btn i {
@@ -104,6 +134,7 @@ hr{
     background-color: hotpink;
     color: white;
     transform: scale(1.1, 1.1);
+    box-shadow: gray 0px 7px 10px;
 }
 
 .btn a {
@@ -111,6 +142,9 @@ hr{
     margin: 3em;
 }
 
+footer .container {
+    color: white;
+}
 footer div {
     margin-bottom: 20px;
 }
@@ -122,4 +156,18 @@ footer i:hover {
 
 footer i {
     transition: all 300ms ease-out;
+}
+
+footer a {
+    color: rgb(222, 236, 17);
+}
+
+#button {
+    margin: 20px !important;
+    transition: all 300ms ease;
+}
+
+#button:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: gray 0px 5px 10px;
 }
